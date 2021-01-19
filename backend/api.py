@@ -31,7 +31,9 @@ async def assign_twitter(twitter_user: str, wallet_address: str):
 
 @app.get("/generate")
 async def generate(twitter_user: str, wallet_address: str):
-    return generate_identifier(twitter_user, wallet_address)
+    return {
+        'identifier': generate_identifier(twitter_user, wallet_address)
+    }
 
 
 if __name__ == "__main__":
