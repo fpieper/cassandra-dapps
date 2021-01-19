@@ -1,0 +1,4 @@
+base58
+fastapi
+uvicorn[standard]
+aiohttp[speedups]
