@@ -7,13 +7,13 @@ from config import TWITTER_BEARER_TOKEN
 app = FastAPI()
 
 
-def generate_identifier(twitter_user: str, wallet_address: str):
+def generate_code(twitter_user: str, wallet_address: str):
     return sha3_256_base58(f"{twitter_user}{wallet_address}".encode('utf-8')).decode('utf-8')[:20]
 
 
 @app.get("/assign-twitter")
 async def assign_twitter(twitter_user: str, wallet_address: str):
-    identifier = generate_identifier(twitter_user, wallet_address)
+    identifier = generate_code(twitter_user, wallet_address)
 
     search_query = f"from:{twitter_user} {identifier}"
     headers = {
@@ -32,7 +32,7 @@ async def assign_twitter(twitter_user: str, wallet_address: str):
 @app.get("/generate")
 async def generate(twitter_user: str, wallet_address: str):
     return {
-        'identifier': generate_identifier(twitter_user, wallet_address)
+        'code': generate_code(twitter_user, wallet_address)
     }
 
 
