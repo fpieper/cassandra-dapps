@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "license": "MIT",
+  "author": "Nissan Hanina <nissanhanina@gmail.com>",
+  "workspaces": [
+    "*"
+  ],
+  "scripts": {
+    "start": "yarn workspaces foreach --verbose -t --parallel run start",
+    "build": "yarn workspaces foreach --verbose --parallel run build",
+    "test": "jest",
+    "test:changed": "jest --onlyChanged",
+    "test:fast": "jest --testPathIgnorePatterns e2e",
+    "lint": "eslint . --ext .ts",
+    "changeset": "changeset",
+    "version:all": "yarn version apply --all",
+    "publish": "yarn workspaces foreach --exclude examples --verbose npm publish --tolerate-republish --access public",
+    "upgrade-interactive": "yarn upgrade-interactive",
+    "check-version": "yarn version check",
+    "g:tsc:clean": "cd $INIT_CWD && tsc -b --clean",
+    "g:dev": "cd $INIT_CWD && tsc -b --clean",
+    "g:tsc:project": "cd $INIT_CWD && tsc -b --verbose",
+    "g:tsc:cjs": "cd $INIT_CWD && tsc --outDir .dist-cjs --module CommonJS"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
