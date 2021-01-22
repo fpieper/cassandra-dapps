@@ -32,14 +32,14 @@ function drawBg(ctx: CanvasRenderingContext2D) {
     const cw = canvas.width
     const ch = canvas.height
     // linear-gradient( to bottom right, #91defe, #99c0f9, #bdb6ec, #d7b3e3, #efb3d5, #f9bccc )
-    const grd = ctx.createRadialGradient(cw, 0, 1, cw, ch, cw);
+    const grd = ctx.createRadialGradient(cw, ch, 0, cw, ch, cw);
 
-    grd.addColorStop(.0, "#f9bccc")
-    grd.addColorStop(.1, "#efb3d5")
-    grd.addColorStop(.6, "#d7b3e3")
-    grd.addColorStop(.8, "#bdb6ec")
-    grd.addColorStop(.9, "#99c0f9")
-    grd.addColorStop(1, "#91defe")
+    grd.addColorStop(.0, "#91defe")
+    grd.addColorStop(.1, "#99c0f9")
+    grd.addColorStop(.5, "#bdb6ec")
+    grd.addColorStop(.7, "#d7b3e3")
+    grd.addColorStop(.9, "#efb3d5")
+    grd.addColorStop(1, "#f9bccc")
 
     // Fill with gradient
     ctx.fillStyle = grd;
