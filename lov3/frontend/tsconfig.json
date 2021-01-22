@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "outDir": ".dist",
+    "rootDir": "src",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "strict": false
+  },
+  "references": [
+    {
+      "path": "../../cassandra-client"
+    }
+  ]
+}

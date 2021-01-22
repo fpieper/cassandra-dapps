@@ -1,0 +1,19 @@
+{
+  "name": "cassandra-client",
+  "version": "0.0.0",
+  "main": ".dist/index.js",
+  "scripts": {
+    "clean": "yarn g:tsc:clean",
+    "build": "yarn yarn g:tsc:cjs && yarn g:tsc:project",
+    "start": "yarn g:tsc:project",
+    "dev": "yarn g:tsc:project:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nissoh/fufu"
+  },
+  "dependencies": {
+    "noble-ed25519": "1.0.2"
+  },
+  "license": "MIT"
+}

@@ -129,3 +129,27 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+
+.dist
+.dist-cjs
+.DS_STORE
+tsconfig.tsbuildinfo
+
+# yarn Zero-Installs
+# .yarn/*
+# !.yarn/cache
+# !.yarn/releases
+# !.yarn/plugins
+# !.yarn/sdks
+# !.yarn/versions
+
+/node_modules
+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
