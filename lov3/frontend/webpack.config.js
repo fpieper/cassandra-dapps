@@ -10,7 +10,6 @@ module.exports = {
         path: __dirname + '/dist',
         filename: "[name].js"
     },
-    watch: false,
     context: __dirname, // to automatically find tsconfig.json
     devtool: 'source-map',
     module: {

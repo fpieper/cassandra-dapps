@@ -1007,9 +1007,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cassandra-client@workspace:cassandra-client":
+"cassandra-client@workspace:cassandra-client/ts":
   version: 0.0.0-use.local
-  resolution: "cassandra-client@workspace:cassandra-client"
+  resolution: "cassandra-client@workspace:cassandra-client/ts"
   dependencies:
     noble-ed25519: 1.0.2
   languageName: unknown

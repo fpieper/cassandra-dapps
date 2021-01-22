@@ -1,5 +1,5 @@
 
-import { createEdSignature } from "../../../cassandra-client/.dist";
+import { createEdSignature } from "cassandra-client";
 import ComponentExample from 'lov3/src/ComponentExample';
 import React, { useState } from 'react';
 import { createUseStyles } from 'react-jss';

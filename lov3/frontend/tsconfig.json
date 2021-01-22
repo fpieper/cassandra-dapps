@@ -9,7 +9,7 @@
   },
   "references": [
     {
-      "path": "../../cassandra-client"
+      "path": "../../cassandra-client/ts"
     }
   ]
 }

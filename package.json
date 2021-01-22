@@ -2,11 +2,12 @@
   "private": true,
   "license": "MIT",
   "workspaces": [
-    "cassandra-client",
+    "cassandra-client/ts",
     "lov3/frontend"
   ],
   "scripts": {
     "build": "yarn workspaces foreach --verbose --parallel run build",
+    "clean": "yarn workspaces foreach --verbose --parallel run clean",
     "test": "jest",
     "test:changed": "jest --onlyChanged",
     "test:fast": "jest --testPathIgnorePatterns e2e",

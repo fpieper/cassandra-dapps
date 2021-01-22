@@ -5,6 +5,7 @@
   "version": "0.0.0",
   "scripts": {
     "clean": "rm -rf .dist",
+    "build": "webpack --config webpack.prod.js",
     "start": "webpack serve --entry ./src/index.tsx"
   },
   "dependencies": {
