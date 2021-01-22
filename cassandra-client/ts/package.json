@@ -1,7 +1,6 @@
 {
   "private": true,
   "license": "MIT",
-  "author": "Nissan Hanina <nissanhanina@gmail.com>",
   "workspaces": [
     "*"
   ],
