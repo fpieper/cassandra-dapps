@@ -4,7 +4,6 @@
     "outDir": ".dist",
     "rootDir": "src",
     "jsx": "react",
-    "esModuleInterop": true,
     "strict": false
   },
   "references": [

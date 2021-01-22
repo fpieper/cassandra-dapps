@@ -1007,7 +1007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cassandra-client@workspace:cassandra-client/ts":
+"cassandra-client@workspace:*, cassandra-client@workspace:cassandra-client/ts":
   version: 0.0.0-use.local
   resolution: "cassandra-client@workspace:cassandra-client/ts"
   dependencies:
@@ -3579,6 +3579,7 @@ fsevents@~2.3.1:
   dependencies:
     "@types/react": ^16.9.0
     "@types/react-dom": ^16.9.0
+    cassandra-client: "workspace:*"
     fork-ts-checker-webpack-plugin: 6.0.7
     html-webpack-plugin: 4.5.0
     pnp-webpack-plugin: 1.6.4
