@@ -1,4 +1,5 @@
 # Cassandra Dapps Ecosytem
+WIP
 
 # Cassandra Typescript Projects
 
@@ -10,14 +11,14 @@
 
 Using Visual Studio Code as your IDE is recommanded for the vast amount of features it provides for typescript source code
 
+### Cassandra-Client
+[README](cassandra-client/ts/README.md)
 
 ### LOV3
 [Frontend README](lov3/frontend/README.md)
 
 [Backend README](lov3/backend/README.md)
 
-### Cassandra-Client
-[README](cassandra-client/README.md)
 
 
 ## Project Management Tools
